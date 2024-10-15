@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://matyuninger.vercel.app');
 const loginDiv = document.getElementById('login');
 const chatDiv = document.getElementById('chat');
 const usernameInput = document.getElementById('username');
