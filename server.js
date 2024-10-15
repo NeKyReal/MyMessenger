@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 io.on('connection', (socket) => {
   console.log('A user connected');
 
-  // Сохраним имя пользователя в socket.
   socket.on('set username', (username) => {
     socket.username = username;
     io.emit('user connected', `${username} joined the chat.`);
